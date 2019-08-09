@@ -35,7 +35,7 @@ function createTab(elem) {
 
 axios.get('https://lambda-times-backend.herokuapp.com/topics')
   .then( data => {
-    console.log(data.data.topics);
+    // console.log(data.data.topics);
     data.data.topics.forEach(element => {
         createTab(element);
 
